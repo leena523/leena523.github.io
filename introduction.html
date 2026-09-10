@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction</title>
+
+    <style>
+
+        body {
+            background-color: #A79AB2;
+        }
+
+        h1 {
+            text-align: center;
+            color:#96C3CE
+        }
+
+        /* Formatting table for information*/
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        table, th, td {
+            border: 1px solid #96C3CE;
+            padding: 10px;
+            
+        }
+        td{
+            color: #f2f2f2;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Making sure that my two photos are side by side and centered*/
+        .image-row{
+            display: flex;
+            justify-content: center;
+            gap:20px;
+        }
+
+        .intro-img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        /* centering the index link */
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<!-- Table information -->
+
+<body>
+
+    <h1>My Introduction</h1>
+
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Skills</td>
+            <td>Java, SQL, Calculus, RStudio</td>
+        </tr>
+        <tr>
+            <td>Abilities</td>
+            <td>Problem solving, Teamwork, Strong Communication</td>
+        </tr>
+        <tr>
+            <td>Education</td>
+            <td>North Carolina A&T State University, Expected Grad Date: May 2028</td>
+        </tr>
+        <tr>
+            <td>Training</td>
+            <td>Certifications: CCNA - In Progress</td>
+        </tr>
+    </table>
+
+    <!-- Applying formatting of photos to the photos-->
+
+    <div class="image-row">
+    <img src="img/img2.jpg" class="intro-img" alt="Image 1">
+    <img src="img/img3.jpg" class="intro-img" alt="Image 2">
+    </div>
+
+    <div class="back-link">
+        <a href="index.html">Back to Index</a>
+    </div>
+
+</body>
+</html>
