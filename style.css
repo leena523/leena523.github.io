@@ -1,0 +1,53 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #fdf6e3;
+  color: #333;
+  margin: 40px;
+  line-height: 1.6;
+}
+
+/* Centers image and paragraph block */
+.center-block {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Centers the image itself */
+.center-img {
+  display: block;
+  margin: 0 auto;
+  width: 600px; /* adjust to match  image width */
+}
+
+/* Aligns paragraph edges with image edges */
+.center-block p {
+  text-align: left;
+  display: inline-block;
+  width: 600px; /* same as image width */
+}
+
+/* Text styling classes */
+.underline {
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: orange;
+}
+
+.red-text {
+  color: red;
+}
+
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
