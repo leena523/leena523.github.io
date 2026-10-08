@@ -88,25 +88,23 @@ function markEmpty(labelId, message) {
     let label = document.getElementById(labelId);
     let msgSpan = label.querySelector(".msg");
 
-    msgSpan.textContent = message;
-    msgSpan.classList.add("error");
+    msgSpan.innerHTML = `<span class="error">${message}</span>`;
 }
 
 function markWarning(labelId, message) {
     let label = document.getElementById(labelId);
     let msgSpan = label.querySelector(".msg");
 
-    msgSpan.textContent = message;
-    msgSpan.classList.add("warning");
+    msgSpan.innerHTML = `<span class="warning">${message}</span>`;
 }
 
 function resetLabels() {
     let spans = document.querySelectorAll(".msg");
     spans.forEach(span => {
-        span.textContent = "";
-        span.classList.remove("error", "warning");
+        span.innerHTML = "";
     });
 }
+
 
 
 function clearWarnings() {
