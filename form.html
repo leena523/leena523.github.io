@@ -3,52 +3,9 @@
 <head>
     <title>Assignment 4 Form</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        background-color: white;
-        margin: 40px;
-    }
-
-    form {
-        text-align: left;
-        width: 400px;
-    }
-
-    label {
-        display: block;
-        margin-top: 10px;
-    }
-
-    input, select {
-        margin-top: 5px;
-        padding: 5px;
-        font-size: 16px;
-        width: 250px;
-    }
-
-    button {
-        margin-top: 15px;
-        padding: 6px 12px;
-        font-size: 16px;
-    }
-
-    .msg {
-        font-weight: bold;
-        margin-left: 5px;
-        display: inline-block;
-    }
-
-    .error {
-        color: red;
-    }
-
-    .warning {
-        color: orange;
-    }
-</style>
-
-
+        .error { color: red; }
+        .warning { color: orange; }
+    </style>
 </head>
 <body>
 
@@ -56,27 +13,27 @@
 
 <form id="userForm">
 
-    <label id="userLabel">Username: <span class="msg"></span></label>
+    <label id="userLabel">Username:</label>
     <input type="text" id="username"><br><br>
 
-    <label id="emailLabel">Email: <span class="msg"></span></label>
+    <label id="emailLabel">Email:</label>
     <input type="text" id="email"><br><br>
 
-    <label id="phoneLabel">Phone Number: <span class="msg"></span></label>
+    <label id="phoneLabel">Phone Number:</label>
     <input type="text" id="phone"><br><br>
 
-    <label id="passLabel">Enter Password: <span class="msg"></span></label>
+    <label id="passLabel">Enter Password:</label>
     <input type="password" id="password"><br><br>
 
-    <label id="confirmLabel">Confirm Password: <span class="msg"></span></label>
+    <label id="confirmLabel">Confirm Password:</label>
     <input type="password" id="confirm"><br><br>
 
-   <label id="genderLabel">Gender: <span class="msg"></span></label>
+    <label id="genderLabel">Gender:</label><br>
     <input type="radio" name="gender" value="Female"> Female<br>
     <input type="radio" name="gender" value="Male"> Male<br>
     <input type="radio" name="gender" value="Other"> Other<br><br>
 
-    <label id="ageLabel">Age Group: <span class="msg"></span></label>
+    <label id="ageLabel">Age Group:</label>
     <select id="age">
         <option value="">(blank)</option>
         <option value="<21">< 21 years old</option>
@@ -100,6 +57,5 @@
 </form>
 
 <script src="validation.js"></script>
-<a href="index.html">Back to Index</a>
 </body>
 </html>

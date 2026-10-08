@@ -86,26 +86,22 @@ function validateForm() {
 
 function markEmpty(labelId, message) {
     let label = document.getElementById(labelId);
-    let msgSpan = label.querySelector(".msg");
-
-    msgSpan.innerHTML = `<span class="error">${message}</span>`;
+    label.classList.add("error");
+    label.innerHTML = message;
 }
 
 function markWarning(labelId, message) {
     let label = document.getElementById(labelId);
-    let msgSpan = label.querySelector(".msg");
-
-    msgSpan.innerHTML = `<span class="warning">${message}</span>`;
+    label.classList.add("warning");
+    label.innerHTML = message;
 }
 
 function resetLabels() {
-    let spans = document.querySelectorAll(".msg");
-    spans.forEach(span => {
-        span.innerHTML = "";
+    let labels = document.querySelectorAll("label");
+    labels.forEach(label => {
+        label.classList.remove("error", "warning");
     });
 }
-
-
 
 function clearWarnings() {
     resetLabels();
