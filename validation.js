@@ -86,22 +86,28 @@ function validateForm() {
 
 function markEmpty(labelId, message) {
     let label = document.getElementById(labelId);
-    label.classList.add("error");
-    label.innerHTML = message;
+    let msgSpan = label.querySelector(".msg");
+
+    msgSpan.textContent = message;
+    msgSpan.classList.add("error");
 }
 
 function markWarning(labelId, message) {
     let label = document.getElementById(labelId);
-    label.classList.add("warning");
-    label.innerHTML = message;
+    let msgSpan = label.querySelector(".msg");
+
+    msgSpan.textContent = message;
+    msgSpan.classList.add("warning");
 }
 
 function resetLabels() {
-    let labels = document.querySelectorAll("label");
-    labels.forEach(label => {
-        label.classList.remove("error", "warning");
+    let spans = document.querySelectorAll(".msg");
+    spans.forEach(span => {
+        span.textContent = "";
+        span.classList.remove("error", "warning");
     });
 }
+
 
 function clearWarnings() {
     resetLabels();
