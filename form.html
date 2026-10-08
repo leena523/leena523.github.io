@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 4 Form</title>
+    <style>
+        .error { color: red; }
+        .warning { color: orange; }
+    </style>
+</head>
+<body>
+
+<h2>COMP 322 – Assignment 4</h2>
+
+<form id="userForm">
+
+    <label id="userLabel">Username:</label>
+    <input type="text" id="username"><br><br>
+
+    <label id="emailLabel">Email:</label>
+    <input type="text" id="email"><br><br>
+
+    <label id="phoneLabel">Phone Number:</label>
+    <input type="text" id="phone"><br><br>
+
+    <label id="passLabel">Enter Password:</label>
+    <input type="password" id="password"><br><br>
+
+    <label id="confirmLabel">Confirm Password:</label>
+    <input type="password" id="confirm"><br><br>
+
+    <label id="genderLabel">Gender:</label><br>
+    <input type="radio" name="gender" value="Female"> Female<br>
+    <input type="radio" name="gender" value="Male"> Male<br>
+    <input type="radio" name="gender" value="Other"> Other<br><br>
+
+    <label id="ageLabel">Age Group:</label>
+    <select id="age">
+        <option value="">(blank)</option>
+        <option value="<21">< 21 years old</option>
+        <option value="21-25">21 - 25 years old</option>
+        <option value="26-35">26 - 35 years old</option>
+        <option value="36-50">36 - 50 years old</option>
+        <option value="50+">50 years old</option>
+    </select><br><br>
+
+    <label>Favorite Music Genre:</label><br>
+    <input type="checkbox" value="Pop"> Pop<br>
+    <input type="checkbox" value="Hip-hop"> Hip-hop<br>
+    <input type="checkbox" value="Jazz"> Jazz<br>
+    <input type="checkbox" value="Rock"> Rock<br>
+    <input type="checkbox" value="Classical"> Classical Music<br>
+    <input type="checkbox" value="Country"> Country<br><br>
+
+    <button type="button" onclick="validateForm()">Submit</button>
+    <button type="reset" onclick="clearWarnings()">Clear</button>
+
+</form>
+
+<script src="validation.js"></script>
+</body>
+</html>
